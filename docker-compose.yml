@@ -13,7 +13,7 @@ services:
     environment:
       # Database Configuration
       # Sesuaikan dengan host/container name MySQL Anda
-      DB_HOST: 43.157.204.179
+      DB_HOST: 172.19.0.2
       DB_PORT: 3306
       DB_USER: root
       DB_PASSWORD: root
