@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Cashier API Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cashier-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # Database Configuration
+      # Sesuaikan dengan host/container name MySQL Anda
+      DB_HOST: 43.157.204.179
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: cashier
+
+      # Server Configuration
+      SERVER_PORT: 8080
+
+      # JWT Configuration
+      JWT_SECRET: supersecretkey
+      JWT_EXPIRATION: 24h
+
+      # App Environment
+      APP_ENV: production

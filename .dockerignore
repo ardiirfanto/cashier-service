@@ -1,0 +1,47 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+docs/
+README.md
+CHANGELOG.md
+LICENSE
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Development files
+.env
+.env.local
+.env.*.local
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+*_test.go
+testdata/
+coverage.out
+
+# Build artifacts
+bin/
+dist/
+tmp/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies (will be downloaded during build)
+go.sum
