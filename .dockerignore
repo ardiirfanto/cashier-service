@@ -42,6 +42,3 @@ vendor/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Dependencies (will be downloaded during build)
-go.sum
